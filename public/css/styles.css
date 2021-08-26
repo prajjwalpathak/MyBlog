@@ -72,51 +72,52 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 100vw;
- 
+  height: 60vh;
   font-family: sans-serif;
 }
 
 .titleLabel {
-  font-size: 1.2vmax;
-  margin: 0 0 1vmax 10vmax;
+  font-size: 1vmax;
+  padding: 1vmax 10vmax;
   font-weight: bold;
 }
 
 .titleTextBox {
-  width: 80vmax;
+  width: 80vw;
   height: 2vmax;
-  font-size: 1.2vmax;
+  font-size: 1vmax;
   font-family: sans-serif;
-  margin: 0 0 1vmax 10vmax;
-  border: 1px solid rgb(167, 167, 167);
-  border-radius: 4px;
+  justify-content: center;
   padding: 0.5vmax;
+  border: 0.1vmax solid rgb(167, 167, 167);
+  border-radius: 4px;
+  align-self: center;
 }
 
 .postLabel {
-  font-size: 1.2vmax;
-  margin: 0 0 1vmax 10vmax;
+  font-size: 1vmax;
+  padding: 1vmax 10vmax;
   font-weight: bold;
 }
 
 .postTextBox {
-  width: 80vmax;
+  width: 80vw;
   height: 15vmax;
-  font-size: 1.2vmax;
+  font-size: 1vmax;
   font-family: sans-serif;
-  margin: 0 0 1vmax 10vmax;
-  border: 1px solid #ccc;
-  border-radius: 4px;
   padding: 0.5vmax;
+  border: 0.1vmax solid rgb(167, 167, 167);
+  border-radius: 4px;
+  align-self: center;
 }
 
 .publish {
   width: 6vmax;
   height: 2.5vmax;
-  font-size: 1.2vmax;
-  margin: 0 0 1vmax 10vmax;
-  background-color: rgb(85, 85, 221);
+  font-size: 1vmax;
+  margin: 1vmax 10vmax;
+  background-color: rgb(83, 83, 182);
   color: white;
   border-radius: 3px;
-  border:rgb(85, 85, 221)
+  border:rgb(83, 83, 182)
 }
