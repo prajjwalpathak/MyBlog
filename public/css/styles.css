@@ -61,10 +61,12 @@ a {
 h1 {
   margin: 3rem;
   font-family: 'Special Elite', cursive, sans-serif;
+  font-size: 3rem;
 }
 
-p {
+.content {
   margin: 3rem;
+  font-size: 1.5rem;
 }
 
 .footer {
