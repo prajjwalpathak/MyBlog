@@ -13,9 +13,14 @@ const aboutContent = "Nec ullamcorper sit amet risus nullam eget felis eget nunc
 
 const contactContent = "Diam maecenas ultricies mi eget mauris pharetra et ultrices neque.";
 
+let posts = [];
+
 app.get("/", (req, res)=>{
 
-    res.render("index", {homeContent: homeContent});
+    res.render("index", {
+        homeData: homeContent,
+        postData: posts
+    });
 });
 
 app.get("/about", (req, res)=>{
@@ -35,8 +40,12 @@ app.get("/compose", (req, res)=>{
 
 app.post ("/compose", (req, res)=> {
 
-    const composeInput = req.body.postTitle;
-    console.log(composeInput);
+    const composeInput = {
+        title: req.body.titleBox,
+        post: req.body.postBox
+    }
+    posts.push(composeInput);
+    res.redirect("/");
 });
 
 

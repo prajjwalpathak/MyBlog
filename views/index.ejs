@@ -1,5 +1,4 @@
 <%- include("partials/head"); -%>
-<div class="container">
     <div class="header">
         <%- include("partials/header"); -%>
     </div>
@@ -7,12 +6,21 @@
     <div class="main">
         <h1>Home</h1>
         <p class="content">
-            <%= homeContent %>
+            <%= homeData %>
         </p>
+
+        <% postData.forEach(function(element) { %>
+            <h1>
+                <%= element.title %>
+            </h1>
+            <p class="content">
+                <%= element.post %>
+            </p>
+            <% }); %>
+
     </div>
 
     <div class="footer">
         <%- include("partials/footer"); -%>
     </div>
-</div>
 <%- include("partials/foot"); -%>
