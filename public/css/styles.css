@@ -28,18 +28,29 @@ li {
   font-size: 1.5vmax;
 }
 
-a:hover {
+.navbar a:hover {
   color: rgb(47, 123, 194);
 }
 
-a {
+.navbar a {
   text-decoration: none;
   color: black;
   font-weight: bold;
 }
 
+.homeContent {
+  font-size: 1.2vmax;
+  padding: 2vmax 10vmax 3vmax 10vmax;
+}
+
+.readMore {
+  text-decoration: none;
+  color: rgb(34, 94, 32);
+  font-size: 1vmax;
+}
+
 .main {
-  display: flex ;
+  display: flex;
   flex-direction: column;
   width: 100vw;
   min-height: 75vh;
@@ -47,13 +58,13 @@ a {
 }
 
 h1 {
-  padding: 2vmax 10vmax 0;
+  padding: 1.5vmax 0 0 10vmax;
   font-family: "Special Elite", cursive, sans-serif;
   font-size: 2vmax;
 }
 
 .content {
-  font-size: 1vmax;
+  font-size: 1.2vmax;
   padding: 2vmax 10vmax;
 }
 
@@ -78,7 +89,7 @@ h1 {
 
 .titleLabel {
   font-size: 1vmax;
-  padding: 1vmax 10vmax;
+  padding: 1vmax 0 1vmax 10vmax;
   font-weight: bold;
 }
 
@@ -96,7 +107,7 @@ h1 {
 
 .postLabel {
   font-size: 1vmax;
-  padding: 1vmax 10vmax;
+  padding: 1vmax 0 1vmax 10vmax;
   font-weight: bold;
 }
 
@@ -119,5 +130,5 @@ h1 {
   background-color: rgb(83, 83, 182);
   color: white;
   border-radius: 3px;
-  border:rgb(83, 83, 182)
+  border: rgb(83, 83, 182);
 }
