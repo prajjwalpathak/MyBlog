@@ -1,3 +1,4 @@
+const PORT = process.env.PORT || 3000;
 const express = require("express");
 const ejs = require("ejs");
 const _ = require("lodash");
@@ -60,6 +61,6 @@ app.get("/posts/:postName", (req, res) => {
   });
 });
 
-app.listen(3000, (req, res) => {
+app.listen(PORT, (req, res) => {
   console.log("Server running at port 3000");
 });
